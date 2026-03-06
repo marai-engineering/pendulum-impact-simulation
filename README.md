@@ -1,5 +1,11 @@
 # Impact Dynamics Simulation with Restitution (Python)
 
+## Simulation Animation
+
+The animation below shows the simulated motion of the pendulum system after the impact event.
+
+![Impact Simulation](figures/impact_animation.gif)
+
 ## Overview
 This project implements a numerical solver and simulation for a pendulum-like rigid body system undergoing an impact event.
 
@@ -66,3 +72,4 @@ python demo_run.py
 ## Author
 Marai Abed Alrahman  
 Mechanical Engineering – Budapest University of Technology and Economics
+

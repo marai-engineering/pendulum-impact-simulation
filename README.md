@@ -1,44 +1,23 @@
+# Impact Dynamics Simulation (Python)
 
-# Pendulum Impact Solver and Simulation (Python)
+Engineering mini-project modeling a 2-bar impact system:
 
-## Overview
-This project implements a numerical solver and simulation for a rigid-body pendulum system undergoing an impact event.
+- Energy conservation → pre-impact angular velocity
+- Impulsive collision with coefficient of restitution (reduced mass method)
+- Post-impact rebound angle (energy method)
+- Linearized torsional vibration of bar 2 (natural frequency)
 
-The solver computes the system state before and after impact, while the simulation visualizes the resulting motion.
+## How to run
 
-## Objectives
-- Model the dynamics of a pendulum system
-- Compute the system response during an impact event
-- Implement a numerical solver for the impact conditions
-- Visualize the resulting motion
+```bash
+python demo_run.py
+## Install dependencies
 
-## Engineering Approach
-The system is modeled using rigid body dynamics and conservation laws.
+pip install numpy matplotlib
 
-The solver computes:
-- angular velocities before and after impact
-- impulse forces
-- energy transfer during collision
+## Animation
 
-The simulation then integrates the system motion and visualizes the results.
+Run:
 
-## Tools
-- Python
-- NumPy
-- Matplotlib
-
-## Repository Structure
-code/
-- impact_solver.py
-- simulation.py
-- animation.py
-
-images/
-- simulation results
-- plots
-
-## Results
-The simulation provides:
-- motion visualization
-- system trajectories
-- analysis of impact dynamics
+```bash
+py animate_system.py

@@ -208,4 +208,9 @@ anim.save(gif_path, writer=PillowWriter(fps=fps))
 
 print(f"\nAnimation saved to: {gif_path}")
 
+
 plt.show()
+
+from matplotlib.animation import PillowWriter
+
+anim.save("impact_animation.gif", writer=PillowWriter(fps=30))

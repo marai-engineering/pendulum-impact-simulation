@@ -1,23 +1,68 @@
-# Impact Dynamics Simulation (Python)
+# Impact Dynamics Simulation with Restitution (Python)
 
-Engineering mini-project modeling a 2-bar impact system:
+## Overview
+This project implements a numerical solver and simulation for a pendulum-like rigid body system undergoing an impact event.
 
-- Energy conservation → pre-impact angular velocity
-- Impulsive collision with coefficient of restitution (reduced mass method)
-- Post-impact rebound angle (energy method)
-- Linearized torsional vibration of bar 2 (natural frequency)
+The solver computes the system response before and after collision using a **coefficient of restitution**, and the simulation visualizes the resulting motion.
 
-## How to run
+## Objectives
+- Model rigid-body impact dynamics
+- Implement a restitution-based collision solver
+- Analyze angular velocity and angle evolution after impact
+- Visualize system behavior through simulation
 
-```bash
+## Engineering Approach
+The system dynamics are derived using rigid-body mechanics and conservation laws.
+
+The solver computes:
+- angular velocity before impact
+- angular velocity after impact
+- impulse exchange during collision
+- post-impact system evolution
+
+The simulation integrates the system motion and generates plots of the resulting dynamics.
+
+## Tools
+- Python
+- NumPy
+- Matplotlib
+
+## Repository Structure
+
+impact-dynamics-simulation  
+│  
+README.md  
+demo_run.py  
+animate_system.py  
+
+src  
+- impact_solver.py  
+- hw_model1.py  
+- hw1.vib.py  
+
+figures  
+- e_sweep_omega1_after.png  
+- e_sweep_phiA.png  
+
+## Example Results
+
+### Angular Velocity After Impact
+![Angular Velocity](figures/e_sweep_omega1_after.png)
+
+### Impact Angle Response
+![Impact Angle](figures/e_sweep_phiA.png)
+
+## Running the Simulation
+Run the main simulation file:
+
 python demo_run.py
-## Install dependencies
 
-pip install numpy matplotlib
+## Key Features
+- restitution-based impact solver
+- numerical dynamic simulation
+- visualization of system motion
+- analysis of impact response
 
-## Animation
-
-Run:
-
-```bash
-py animate_system.py
+## Author
+Marai Abed Alrahman  
+Mechanical Engineering – Budapest University of Technology and Economics

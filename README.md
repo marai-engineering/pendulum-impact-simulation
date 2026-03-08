@@ -4,9 +4,9 @@
 
 The animation below shows the simulated motion of the pendulum system after the impact event.
 ![Impact Simulation]
+
 <p align="center">
-  <img src="figures/two_bar_impact_animation_V2.gif)
-" width="500"/>
+  <img src="figures/two_bar_impact_animation_V2.gif" width="500"/>
 </p>
 
 
@@ -76,6 +76,7 @@ python demo_run.py
 ## Author
 Marai Abed Alrahman  
 Mechanical Engineering – Budapest University of Technology and Economics
+
 
 
 
